@@ -1,0 +1,60 @@
+<div class='jumbotron'>
+
+        <h1>
+              Product Page
+            </h1>
+            <p>
+                    As the genome data that we study to potentially save lives grows at massive scale—our institute alone generating roughly 12 terabytes of data daily—human genomics is becoming increasingly reliant on the technology tools we use for computation and storage. Google Cloud allows us to conduct transformative research more rapidly and securely. This speed and security are foundational for scientific discovery today.
+            </p>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Sno</th>
+            <th>
+                Name
+            </th>
+            <th>class</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Rudresh</td>
+            <td>UI</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Soham</td>
+            <td>XUI</td>
+        </tr>
+        
+    </tbody>
+</table>
+
+<div class='row'>
+    <div class="col-xs-12 col-sm-6 col-lg-3 col-md-4"
+     style="height: 200px; background:teal">
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-lg-3 col-md-4" style="height: 200px; background:pink">
+     <div class="text-center"> <b>  <i>pink</i></b></div>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-lg-3 col-md-4" style="height: 200px; background:olive">
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-lg-3 col-md-4" style="height: 200px; background:slateblue">
+        </div>
+
+    <div class="col-xs-12 col-sm-6 col-lg-3 col-md-4" style="height: 200px; background:salmon">
+     </div>
+
+    <div class="col-xs-12 col-sm-6 col-lg-3 col-md-4" style="height: 200px; background:slategrey">
+     </div>
+
+</div>
+<br/>
+<br/>

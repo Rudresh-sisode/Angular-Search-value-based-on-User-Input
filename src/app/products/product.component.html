@@ -1,0 +1,76 @@
+
+<div class="container">
+
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        {{title}}
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class='col-md-3'>
+                User Input
+            </div>
+            <div class="col-md-4">
+                <input type="text"
+                [(ngModel)]='userText'/>
+            </div>"
+        </div>
+        <div class="row">
+        <div class="col-md-6">
+            <h3>Number of product search on basis of {{userText}} </h3>
+        </div>
+        </div>
+        <div class="table-resposive">
+            <table class="table" *ngIf='showTable' >
+                <thead>
+                    <tr>
+                        <td>
+                                <!–– (click) is one way event binding ––>
+                            <button type="button" class='btn btn-success' (click)='toggleImage()'>{{showImage?'Hide Image':'Show Image'}}</button>
+                        </td>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                                Code
+                            </th>
+                        <th>
+                                Date
+                         </th>
+                         <th>
+                                Price
+                        </th>
+                        <th>
+                                Rating
+                            </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let prod of product | search:userText">
+                            <!–– [src] is one way property binding ––>
+                       <td><img [src]='prod.imageUrl'
+                        *ngIf='showImage'/></td>
+                        <td>
+                            {{prod.productName | myPipe:'upper '}}
+                        </td>
+                        <td>
+                             {{prod.productCode}}
+                        </td>
+                         <td>
+                             {{prod.releaseDate | date:'MM/dd/yyyy'}}
+                         </td>
+                         <td>
+                             {{prod.price |discount | currency:'INR'}}
+                         </td>
+                         <td>
+                             {{prod.starRating}}
+                         </td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
